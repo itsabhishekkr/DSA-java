@@ -1,3 +1,4 @@
+// TC=O(n) and SC=O(1)
 import java.util.*;
 public class l14reversearray {
     public static void reverse(int arr[]){
