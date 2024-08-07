@@ -1,16 +1,21 @@
 import java.util.*;
 public class l14reversearray {
-    public static void reverse(int array[]){
-        Scanner sc=new Scanner(System.in);
-        int arrayrev[]=new int[array.length];
-        for(int j=0;j<array.length;j++){
-             arrayrev[j]=array[array.length-j-1];
-             System.out.print(arrayrev[j]);
-
+    public static void reverse(int arr[]){
+        int temp=0;
+        int start=0;
+        int last=arr.length-1;
+        while(start<=last){
+            temp=arr[start];
+            arr[start]=arr[last];
+            arr[last]=temp;
+            start++;last--;
         }
     }
     public static void main(String args[]){
-        int array[]={1,3,4,5,6,7,8};
-        reverse(array);
+        int marks[]={2,3,4,5,6,7};
+        reverse(marks);
+        // print reverse TC=O(n) and SC=O(1)
+        for(int i=0;i<marks.length;i++){
+            System.out.print(marks[i]+" ");
+        }
     }
-}
