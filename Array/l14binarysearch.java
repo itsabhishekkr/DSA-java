@@ -20,6 +20,7 @@ public class l14binarysearch {//binary search means first shorted
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int key=4;
+        // sorted first all array
         int bin[]={2,4,6,8,10,12};
         int index=binarysearch(bin,key); 
         System.out.println("index="+index); 
