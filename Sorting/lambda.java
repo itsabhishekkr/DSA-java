@@ -1,23 +1,21 @@
-// Components of the Lambda Statement
-// characters.sort((a, b) -> map.get(a) - map.get(b));  assending order
+// characters.sort((a, b) -> map.get(a) - map.get(b));
+// Positive (map.get(a) - map.get(b) > 0):
 
-// These are the two elements being compared during the sorting process.
-// In this case, a and b represent characters from the characters list.
-// map.get(a) and map.get(b):
+// If map.get(a) is greater than map.get(b), the result is positive.
+// This means a should come after b in the sorted order.
+// Negative (map.get(a) - map.get(b) < 0):
 
-// The map.get(a) retrieves the value associated with the key a in the map. Similarly, map.get(b) retrieves the value for b.
-// These values are typically the frequencies of the characters (if map is storing frequencies).
-// map.get(a) - map.get(b):
+// If map.get(a) is less than map.get(b), the result is negative.
+// This means a should come before b in the sorted order.
+// Zero (map.get(a) - map.get(b) == 0):
 
-// This performs subtraction of the frequency of a from the frequency of b.
-// If the result is:
-// 1. Positive: b should come before a in the sorted order.
-// 2. Zero: a and b are equal in terms of frequency, so their relative order doesn't change.
-// 3. Negative: a should come before b.
-// Descending Order:
+// If map.get(a) is equal to map.get(b), the result is zero.
+// This means a and b are equal in terms of value, and their relative order doesn’t change.
+// In short:
 
-// By subtracting map.get(a) from map.get(b), we ensure that characters with higher frequencies (higher values in the map) are placed earlier in the list.
-
+// Positive: a comes after b.
+// Negative: a comes before b.
+// Zero: No change in order (they are equal).
 
 
 import java.util.*;
