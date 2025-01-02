@@ -33,7 +33,7 @@ public class Main {
         // List of characters to sort
         List<Character> characters = new ArrayList<>(map.keySet());
 
-        // Sort based on map values in descending order
+        // Sort based on map values in asscending order
         characters.sort((a, b) -> map.get(a) - map.get(b));
 
         System.out.println(characters); // Output: [c,a,b]
