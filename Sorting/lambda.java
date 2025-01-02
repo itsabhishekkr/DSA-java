@@ -1,5 +1,5 @@
 // Components of the Lambda Statement
-// (a, b):
+// characters.sort((a, b) -> map.get(a) - map.get(b));  assending order
 
 // These are the two elements being compared during the sorting process.
 // In this case, a and b represent characters from the characters list.
@@ -7,7 +7,7 @@
 
 // The map.get(a) retrieves the value associated with the key a in the map. Similarly, map.get(b) retrieves the value for b.
 // These values are typically the frequencies of the characters (if map is storing frequencies).
-// map.get(b) - map.get(a):
+// map.get(a) - map.get(b):
 
 // This performs subtraction of the frequency of a from the frequency of b.
 // If the result is:
@@ -34,8 +34,8 @@ public class Main {
         List<Character> characters = new ArrayList<>(map.keySet());
 
         // Sort based on map values in descending order
-        characters.sort((a, b) -> map.get(b) - map.get(a));
+        characters.sort((a, b) -> map.get(a) - map.get(b));
 
-        System.out.println(characters); // Output: [b, a, c]
+        System.out.println(characters); // Output: [c,a,b]
     }
 }
